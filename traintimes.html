@@ -1,0 +1,70 @@
+<!doctype html>
+<html manifest="cache.manifest">
+<meta charset=utf-8>
+<title>Train Timetables</title>
+<meta name="viewport" content="width=device-width">
+<link rel="apple-touch-icon" href="http://traintimes.org.uk/traintimes-touch-icon.png">
+<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false">
+	<table>
+		<tr>
+			<td>
+				From:
+			<td>
+				<select name="from">
+					<option value=clj>Clapham Junction
+					<option value=spb>Shepherd's Bush
+					<option value=vxh>Vauxhall
+					<option value=vic>Victoria
+					<option value=wnt>Wandsworth Town
+					<option value=wat>Waterloo
+				</select>
+		<tr>
+			<td>
+				To:
+			<td>
+				<select name="to">
+					<option value=clj>Clapham Junction
+					<option value=spb>Shepherd's Bush
+					<option value=vxh>Vauxhall
+					<option value=vic selected>Victoria
+					<option value=wnt>Wandsworth Town
+					<option value=wat>Waterloo
+				</select>
+		<tr>
+			<td>
+			<td>
+				<input type=submit>
+	</table>
+</form>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+	/*
+	$('select[name=from]').change(function() {
+		$('select[name=to]').val('clj');
+	});
+	*/
+	navigator.geolocation.getCurrentPosition(function(position) {
+		// http://www.doogal.co.uk/london_stations.php
+		var coordinates = {
+			clj: [51.4643668047, -0.1703006091],
+			spb: [51.5045321773, -0.2185047537],
+			vxh: [51.4857358164, -0.1238155529],
+			vic: [51.4964239699, -0.1439063031],
+			wnt: [51.4610340983, -0.1878956456],
+			wat: [51.5031466531, -0.1132448466]
+		}
+		var minimumDistance = Number.MAX_VALUE;
+		var nearestStation;
+		for (station in coordinates) {
+			var distance = Math.pow(position.coords.latitude - coordinates[station][0], 2) + Math.pow(position.coords.longitude - coordinates[station][1] , 2);
+			if (distance < minimumDistance) {
+				nearestStation = station;
+				minimumDistance = distance;
+			}
+		}
+		$('select[name=from]').val(nearestStation);
+		if (nearestStation !== 'clj') {
+			$('select[name=to]').val('clj');
+		}
+	});
+</script>
