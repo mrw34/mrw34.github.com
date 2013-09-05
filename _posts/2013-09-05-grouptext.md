@@ -18,5 +18,4 @@ Things I learnt:
 * Use of the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API combined with [Meteor methods](http://docs.meteor.com/#methods_header) is a neat solution for file uploading
 * The simplest way to use Google Analytics is to just put your ```analytics.js``` file in the ```client``` folder
 
-Meteor makes writing this type of real-time application refreshingly easy!
-
+Meteor makes writing this type of real-time application refreshingly easy... to find out more take a look at the [the source code](https://github.com/mrw34/grouptext).
