@@ -19,3 +19,4 @@ Things I learnt:
 * The simplest way to use Google Analytics is to just put your ```analytics.js``` file in the ```client``` folder
 
 Meteor makes writing this type of real-time application refreshingly easy!
+
