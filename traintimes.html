@@ -2,41 +2,35 @@
 <html manifest="manifest.appcache">
 <meta charset=utf-8>
 <title>Train Timetables</title>
-<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="http://traintimes.org.uk/traintimes-touch-icon.png">
-<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false">
-	<table>
-		<tr>
-			<td>
-				From:
-			<td>
-				<select name="from">
-					<option value=clj>Clapham Junction
-					<option value=spb>Shepherd's Bush
-					<option value=vxh>Vauxhall
-					<option value=vic>Victoria
-					<option value=wnt>Wandsworth Town
-					<option value=wat>Waterloo
-				</select>
-		<tr>
-			<td>
-				To:
-			<td>
-				<select name="to">
-					<option value=clj>Clapham Junction
-					<option value=spb>Shepherd's Bush
-					<option value=vxh selected>Vauxhall
-					<option value=vic>Victoria
-					<option value=wnt>Wandsworth Town
-					<option value=wat>Waterloo
-				</select>
-		<tr>
-			<td>
-			<td>
-				<input type=submit>
-	</table>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container">
+	<div class="form-group">
+		<label>From:</label>
+		<select name="from" class="form-control">
+			<option value=clj>Clapham Junction</option>
+			<option value=spb>Shepherd's Bush</option>
+			<option value=vxh>Vauxhall</option>
+			<option value=vic>Victoria</option>
+			<option value=wnt>Wandsworth Town</option>
+			<option value=wat>Waterloo</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label>To:</label>
+		<select name="to" class="form-control">
+			<option value=clj>Clapham Junction</option>
+			<option value=spb>Shepherd's Bush</option>
+			<option value=vxh selected>Vauxhall</option>
+			<option value=vic>Victoria</option>
+			<option value=wnt>Wandsworth Town</option>
+			<option value=wat>Waterloo</option>
+		</select>
+	</div>
+	<input type="submit" class="btn btn-default">
 </form>
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script>
 	$('select[name=from]').change(function() {
 		$('select[name=to]').val('clj');
