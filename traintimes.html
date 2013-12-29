@@ -5,30 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="http://traintimes.org.uk/traintimes-touch-icon.png">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container">
+<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container form-horizontal" style="padding-top: 1em">
 	<div class="form-group">
-		<label>From:</label>
-		<select name="from" class="form-control">
-			<option value=clj>Clapham Junction</option>
-			<option value=spb>Shepherd's Bush</option>
-			<option value=vxh>Vauxhall</option>
-			<option value=vic>Victoria</option>
-			<option value=wnt>Wandsworth Town</option>
-			<option value=wat>Waterloo</option>
-		</select>
+		<label class="col-sm-1 control-label">From:</label>
+		<div class="col-sm-11">
+			<select name="from" class="form-control">
+				<option value=clj>Clapham Junction</option>
+				<option value=spb>Shepherd's Bush</option>
+				<option value=vxh>Vauxhall</option>
+				<option value=vic>Victoria</option>
+				<option value=wnt>Wandsworth Town</option>
+				<option value=wat>Waterloo</option>
+			</select>
+		</div>
 	</div>
 	<div class="form-group">
-		<label>To:</label>
-		<select name="to" class="form-control">
-			<option value=clj>Clapham Junction</option>
-			<option value=spb>Shepherd's Bush</option>
-			<option value=vxh selected>Vauxhall</option>
-			<option value=vic>Victoria</option>
-			<option value=wnt>Wandsworth Town</option>
-			<option value=wat>Waterloo</option>
-		</select>
+		<label class="col-sm-1 control-label">To:</label>
+		<div class="col-sm-11">
+			<select name="to" class="form-control">
+				<option value=clj>Clapham Junction</option>
+				<option value=spb>Shepherd's Bush</option>
+				<option value=vxh selected>Vauxhall</option>
+				<option value=vic>Victoria</option>
+				<option value=wnt>Wandsworth Town</option>
+				<option value=wat>Waterloo</option>
+			</select>
+		</div>
 	</div>
-	<input type="submit" class="btn btn-default">
+	<div class="form-group">
+		<div class="col-sm-11 col-sm-offset-1">
+			<input type="submit" class="btn btn-primary btn-block">
+		</div>
+	</div>		
 </form>
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script>
