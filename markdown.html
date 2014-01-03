@@ -7,8 +7,12 @@
   <script src="//rawgithub.com/chjj/marked/master/lib/marked.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
-    $.get('https://api.github.com/gists/' + window.location.search.split('id=')[1], function(data) {
+    $.get('https://api.github.com/gists/' + getParameterByName('id'), function(data) {
       $('body').html(marked(data.files[Object.keys(data.files)[0]].content));
     });
+    function getParameterByName(name) {
+      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
   </script>
 </body>
