@@ -4,7 +4,7 @@
 <title>Train Timetables</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="http://traintimes.org.uk/traintimes-touch-icon.png">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
 <form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container form-horizontal" style="padding-top: 1em">
 	<div class="form-group">
 		<label class="col-xs-2 control-label">From:</label>
@@ -38,7 +38,7 @@
 		</div>
 	</div>		
 </form>
-<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script>
 	$('select[name=from]').change(function() {
 		$('select[name=to]').val('clj');
