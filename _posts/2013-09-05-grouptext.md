@@ -2,7 +2,7 @@
 title: GroupText
 layout: post
 ---
-[GroupText](https://github.com/mrw34/grouptext) is a web application used by a [community project in London](http://gcsesuccess.wordpress.com/) that provides free tutoring to local kids. It enables the project's tutors to contact individuals or groups of students by SMS without having direct access to their mobile phone numbers.
+[GroupText](https://github.com/mrw34/grouptext) is a web application used by a [community project in London](http://www.gcsesuccess.org/) that provides free tutoring to local kids. It enables the project's tutors to contact individuals or groups of students by SMS without having direct access to their mobile phone numbers.
 
 GroupText is written using Meteor and routes all messages and responses through the [Nexmo](https://www.nexmo.com/) platform, copying them via email to senior tutors to provide auditing and transparency. The code attempts to follow best-practice in terms of security, structure, and re-use of existing packages:
 
