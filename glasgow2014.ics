@@ -1,8 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tri Tech Computers//node-icalendar//EN
-X-WR-CALNAME:Glasgow 2014
-X-WR-CALDESC:Glasgow 2014 Commonwealth Games schedule
+NAME:Glasgow 2014
+DESCRIPTION:Glasgow 2014 Commonwealth Games schedule
 BEGIN:VEVENT
 DTSTAMP:20140628T145728Z
 UID:7e5ead2d-77dc-42da-b6bc-e7d6e7a2c310
