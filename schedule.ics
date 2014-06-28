@@ -3,7 +3,6 @@ VERSION:2.0
 PRODID:-//Tri Tech Computers//node-icalendar//EN
 X-WR-CALNAME:Glasgow 2014
 X-WR-CALDESC:Glasgow 2014 Commonwealth Games schedule
-URL:http://markwoodbridge.com/schedule.ics
 BEGIN:VEVENT
 SUMMARY:Opening ceremony
 DESCRIPTION:The ceremony will include the Parade of Nations - a formal proc
@@ -1939,4 +1938,3 @@ DTEND:20140803T150000Z
 GEO:55.8813884;-4.339610500000001
 END:VEVENT
 END:VCALENDAR
-
