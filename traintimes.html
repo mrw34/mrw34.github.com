@@ -4,14 +4,14 @@
 <title>Train Timetables</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="http://traintimes.org.uk/traintimes-touch-icon.png">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container form-horizontal" style="padding-top: 1em">
 	<div class="form-group">
 		<label class="col-xs-2 control-label">From:</label>
 		<div class="col-xs-10">
 			<select name="from" class="form-control">
 				<option value=clj>Clapham Junction</option>
-				<option value=spb>Shepherd's Bush</option>
+				<option value=sdc>Shoreditch High Street</option>
 				<option value=vxh>Vauxhall</option>
 				<option value=vic>Victoria</option>
 				<option value=wnt>Wandsworth Town</option>
@@ -24,7 +24,7 @@
 		<div class="col-xs-10">
 			<select name="to" class="form-control">
 				<option value=clj>Clapham Junction</option>
-				<option value=spb>Shepherd's Bush</option>
+				<option value=sdc>Shoreditch High Street</option>
 				<option value=vxh selected>Vauxhall</option>
 				<option value=vic>Victoria</option>
 				<option value=wnt>Wandsworth Town</option>
@@ -38,7 +38,7 @@
 		</div>
 	</div>		
 </form>
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script>
 	$('select[name=from]').change(function() {
 		$('select[name=to]').val('clj');
@@ -47,7 +47,7 @@
 		// http://www.doogal.co.uk/london_stations.php
 		var coordinates = {
 			clj: [51.4643668047, -0.1703006091],
-			spb: [51.5045321773, -0.2185047537],
+			sdc: [51.523467    , -0.077073    ],
 			vxh: [51.4857358164, -0.1238155529],
 			vic: [51.4964239699, -0.1439063031],
 			wnt: [51.4610340983, -0.1878956456],
