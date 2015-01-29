@@ -4,117 +4,155 @@ PRODID:-//Tri Tech Computers//node-icalendar//EN
 X-WR-CALNAME:Xerocon 2015
 X-WR-CALDESC:Xerocon London 2015 schedule
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:bd065868-4b39-4665-baad-14e63e7d9267
-SUMMARY:Welcome drinks reception and exhibition open
+DTSTAMP:20150129T203914Z
+UID:8c790208-880f-48f7-bea9-6eab01cff14a
+SUMMARY:Welcome reception
 DESCRIPTION:Come along and register for Xerocon. Pick up your badge\, mingl
  e and get to know your surroundings for the event ahead.
 DTSTART:20150209T180000Z
 DTEND:20150209T210000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:aeceb651-08a9-4a14-a1af-ed1615760b2e
+DTSTAMP:20150129T203914Z
+UID:94dc41be-adcc-4dc2-b36b-09f9ceceaa5b
 SUMMARY:Registration opens
 DESCRIPTION:Grab a coffee\, mingle and take a look around.
 DTSTART:20150210T083000Z
-DTEND:20150210T091500Z
+DTEND:20150210T090000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:2e82a09c-e633-45d4-bf81-6883d73631e2
+DTSTAMP:20150129T203914Z
+UID:bad15993-5732-4223-9732-3748704d1a69
 SUMMARY:Welcome to Xerocon 2015
 DESCRIPTION:Kicking off day one with an overview of all the coming highligh
  ts from the conference.
-DTSTART:20150210T091500Z
-DTEND:20150210T093000Z
+DTSTART:20150210T090000Z
+DTEND:20150210T091500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:04e26af2-3183-40b2-9aec-e4ac73b5887f
+DTSTAMP:20150129T203914Z
+UID:b053e218-fbbe-4054-a484-60419165c423
 SUMMARY:Mobilising the small business economy
-DESCRIPTION:Small businesses drive the UK economy but what drives small bus
- inesses? Our speakers will look at the opportunity that exists to mobilise
-  small businesses through accounting and technology to enable efficiency a
- nd growth.
-DTSTART:20150210T093000Z
+DESCRIPTION:Small businesses drive the UK economy\, but what drives small b
+ usinesses? Karren will be talking about the future for UK small businesses
+  and how cloud technology enabled firms play a pivotal role in supporting 
+ enterprising business owners\, and helping the UK economy reach its potent
+ ial in 2015 and beyond.
+DTSTART:20150210T091500Z
+DTEND:20150210T101500Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:cd4633ec-54df-4853-95d9-5eef62db8c09
+SUMMARY:Morning break
+DESCRIPTION:Your chance to grab a coffee and start chatting.
+DTSTART:20150210T101500Z
 DTEND:20150210T104500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:0e8c1174-a5cf-4d57-ba3b-ffd17d3e9f1b
-SUMMARY:Morning break
-DESCRIPTION:Your chance to grab a coffee and start chatting.
+DTSTAMP:20150129T203914Z
+UID:1ba19e4d-6924-4c38-abc5-ce523b74c8d9
+SUMMARY:The connected business platform
+DESCRIPTION:Rod will take you through what’s coming next in the journey t
+ o a truly connected cloud business platform. He’ll explore the opportuni
+ ties emerging for innovative Accounting Practices and how we can all succe
+ ed if we work together.
 DTSTART:20150210T104500Z
-DTEND:20150210T111500Z
+DTEND:20150210T113000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:0d5ab964-9f41-40e9-8058-015841f5868a
-SUMMARY:Xerocon sets the challenge
-DESCRIPTION:Practitioners will play the principal role in providing British
-  business owners with the guidance and expertise they will need to success
- fully manage their transition towards the world of digitally managed busin
- ess. Our speakers will explore the opportunities and challenges associated
-  with this emerging role.
-DTSTART:20150210T111500Z
-DTEND:20150210T124500Z
+DTSTAMP:20150129T203914Z
+UID:f7497d29-aa89-481c-9eb3-c1802f4e1b1b
+SUMMARY:Empowering small business for growth
+DESCRIPTION:Together with Xero you’ve already built the foundations of th
+ e UK cloud accounting industry. What comes next is going to be even more e
+ xciting as we take the opportunity to build on these foundations\, mobilis
+ e small businesses and drive economic growth. Gary will give an update of 
+ Xero in the UK and you’ll learn how as the founders of the UK cloud acco
+ unting industry you have a unique opportunity to lead industry change and 
+ economic progress.
+DTSTART:20150210T113000Z
+DTEND:20150210T121500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:a619b7b0-79c2-4437-92e5-e7c0859b4652
+DTSTAMP:20150129T203914Z
+UID:91a13758-241a-484c-9ccf-5ad4bc7217bd
 SUMMARY:Lunch
-DESCRIPTION:Time to refuel and meet your peers and our Add-on partners.
-DTSTART:20150210T124500Z
-DTEND:20150210T140000Z
+DESCRIPTION:Time to refuel.
+DTSTART:20150210T121500Z
+DTEND:20150210T133000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:497f461e-3d98-459e-82ed-a96b3261c34a
+DTSTAMP:20150129T203914Z
+UID:4a797181-93ed-497a-864d-b7a5ec43437c
 SUMMARY:The future of business and technology
-DESCRIPTION:We'll take a look into the future to give you a picture of what
-  Accounting and Business will be like so you can prepare your practice for
-  the transition and growth that lies ahead.
-DTSTART:20150210T140000Z
-DTEND:20150210T153000Z
+DESCRIPTION:David will be talking about the big technology picture for cons
+ umers and businesses\, and will explain how you can prepare yourself and y
+ our business to thrive and grow as these new trends take shape.
+DTSTART:20150210T133000Z
+DTEND:20150210T143000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:17edd11b-4b79-4154-a202-d18ac0d0d2a1
+DTSTAMP:20150129T203914Z
+UID:6e85d043-7edb-4efc-a796-0d1e4e603a5c
+SUMMARY:Embrace change and achieve greatness
+DESCRIPTION:Change. Where do you start? You’ve seen the future\, how do y
+ ou get there? Andy will be talking about managing change and how to become
+  the practice of the future. Hear how Andy’s experiences in Silicon Vall
+ ey and the international banking industry directly translate into actionab
+ le learnings that will change your outlook and the way you run your practi
+ ce.
+DTSTART:20150210T143000Z
+DTEND:20150210T151500Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:e2ba3e6f-4aa8-4050-8625-f54b9978d77b
 SUMMARY:Afternoon Tea
-DESCRIPTION:Grab a cuppa and visit our Add-on partners.
-DTSTART:20150210T153000Z
-DTEND:20150210T160000Z
+DESCRIPTION:Grab a cuppa.
+DTSTART:20150210T151500Z
+DTEND:20150210T154500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:1d22e075-cfb5-43ae-bd16-e9e04d92c768
-SUMMARY:Defining the opportunities for cloud accountants
-DESCRIPTION:We’ll hear strategy and practical advice on how to grow your 
- practice by mobilising the small business economy.
-DTSTART:20150210T160000Z
-DTEND:20150210T171500Z
+DTSTAMP:20150129T203914Z
+UID:c326f3e3-8a08-4025-bb0f-75e01bac9ce9
+SUMMARY:Xero Product\, platform innovation
+DESCRIPTION:The Xero technology team will take us through the latest produc
+ t updates and give a preview into the functionality and developments comin
+ g in 2015.
+DTSTART:20150210T154500Z
+DTEND:20150210T164500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:af5ea47f-4a9d-4815-8e63-e521b7405e6c
-SUMMARY:Day one summary
-DESCRIPTION:Overview of day two and the launch of our innovative\, new prog
- ramme for boosting your practice.
-DTSTART:20150210T171500Z
+DTSTAMP:20150129T203914Z
+UID:572a038f-b714-4429-9c5b-ab0a8deb6af1
+SUMMARY:Treating your firm like one of your clients
+DESCRIPTION:When you provide advice to your clients\, does it sometimes rem
+ ind you of all the things you haven't been spending time on in your own bu
+ siness? Amy will provide guidance on getting focus back on your business a
+ nd planning for success and growth in the future.
+DTSTART:20150210T164500Z
 DTEND:20150210T173000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:c03328e5-e2f4-41ef-8313-b72eb2eebbf2
+DTSTAMP:20150129T203914Z
+UID:0459adfb-aba2-419c-84d8-c6c9e9ba5a39
+SUMMARY:Day one summary and close
+DESCRIPTION:
+DTSTART:20150210T173000Z
+DTEND:20150210T180000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:5b629e91-83c3-4d1a-b841-f72d6b64bc0e
 SUMMARY:Drinks reception
 DESCRIPTION:Grab a beverage\, mingle and let your hair down.
 DTSTART:20150210T190000Z
 DTEND:20150210T220000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:ae3ba203-54b2-4fc5-a251-960b2fcef9c0
+DTSTAMP:20150129T203914Z
+UID:dae1b036-6f92-4fc9-ac99-216b9c2c8895
 SUMMARY:Awards dinner
 DESCRIPTION:Sit back\, relax and enjoy dinner with us while we present a va
  riety of awards to accountants\, bookkeepers and Add-ons. Once we’ve dis
@@ -124,106 +162,125 @@ DTSTART:20150210T193000Z
 DTEND:20150210T223000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:e1311525-e25e-4a4d-a209-56a6f40fb1cc
+DTSTAMP:20150129T203914Z
+UID:d60c8785-9f33-46f0-acf6-ef5c87bfe5ce
 SUMMARY:Doors open
-DESCRIPTION:Grab a coffee (or maybe a healthy juice) before day two begins.
+DESCRIPTION:Grab a coffee before day two begins.
 DTSTART:20150211T083000Z
 DTEND:20150211T090000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:9b9cd030-1d66-49cf-9044-5fbc61110ac6
+DTSTAMP:20150129T203914Z
+UID:be300e67-070a-4ef3-a158-53d4c0743fb9
 SUMMARY:Day two welcome
 DESCRIPTION:
 DTSTART:20150211T090000Z
 DTEND:20150211T091500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:d8a31104-45c8-44ad-804c-657d4a587105
-SUMMARY:How your practice must transform to achieve greatness
-DESCRIPTION:Find out the nuts and bolts of the launch of our innovative\, n
- ew programme for boosting your practice.
-DTSTART:20150211T091500Z
-DTEND:20150211T100000Z
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:e93f8753-5f1b-485f-b65a-89405260bfc7
+DTSTAMP:20150129T203914Z
+UID:3be6cfd8-9bd1-4180-8160-d3855def172a
 SUMMARY:Branding your practice
 DESCRIPTION:Rita explains how and why your brand is the most important asse
  t your practice has\, with a summary of why branding is still so vital in 
  the digital age.
+DTSTART:20150211T091500Z
+DTEND:20150211T100000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:dca1eb6d-6678-4dfb-827f-6b0f9251d6ec
+SUMMARY:Partnering for growth
+DESCRIPTION:On day two we’ll focus on the direct actions you can take tha
+ t will help you grow your practices in 2015 and beyond. To kick off the da
+ y Gary will lead a panel debate on how Marketing can be used to grow your 
+ practice.
 DTSTART:20150211T100000Z
 DTEND:20150211T104500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:82688a6d-3a45-42db-b3c3-7ea12e9ecf5f
+DTSTAMP:20150129T203914Z
+UID:2db46431-f541-42a6-9f6f-c482f2cd3359
 SUMMARY:Morning break
-DESCRIPTION:Your chance to grab a coffee and start chatting.
+DESCRIPTION:Grab a flat white and get chatting
 DTSTART:20150211T104500Z
 DTEND:20150211T111500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:81340123-8420-4b10-9ad9-6b920b92deff
-SUMMARY:Xero product update
-DESCRIPTION:Find out what's coming in the Xero product
+DTSTAMP:20150129T203914Z
+UID:aed36b16-577f-414e-9015-464f9f81cb35
+SUMMARY:Xero Product\, customer and practice innovation
+DESCRIPTION:The Xero technology team will take us through the latest produc
+ t updates and give a preview into the functionality and developments comin
+ g in 2015.
 DTSTART:20150211T111500Z
-DTEND:20150211T121500Z
+DTEND:20150211T123000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:4dcb2215-e538-46f1-9b8d-0bd42ee606d6
-SUMMARY:Making the most of the Xero Add-on community
-DESCRIPTION:Gary talks you through the potential value of embracing the Xer
- o ecosystem and our Add-on Partner software tools.
-DTSTART:20150211T121500Z
-DTEND:20150211T124500Z
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:6a5f8317-3be7-4970-a076-78fcb67ab238
+DTSTAMP:20150129T203914Z
+UID:0de6f092-1f57-4a8b-8b50-a7f7667831c6
 SUMMARY:Lunch
-DESCRIPTION:Time to refuel and meet your peers and our Add-on partners.
-DTSTART:20150211T124500Z
-DTEND:20150211T140000Z
+DESCRIPTION:Time to refuel.
+DTSTART:20150211T123000Z
+DTEND:20150211T133000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:5939e7b5-f63d-405d-9a76-0962bc772ed4
+DTSTAMP:20150129T203914Z
+UID:a94bb1e8-420e-467c-bf44-45ce03537a2a
 SUMMARY:Break out sessions
 DESCRIPTION:Move into an afternoon of inspiring and engaging breakout sessi
  ons\, with workshops aimed at every level of experience. Take away actiona
  ble advice to grow your practice.
-DTSTART:20150211T140000Z
+DTSTART:20150211T133000Z
+DTEND:20150211T141500Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:b5a5c44f-ae6a-4fd7-84e5-f2abdb4f80a9
+SUMMARY:Break out sessions
+DESCRIPTION:Grab a cuppa and visit the exhibition.
+DTSTART:20150211T141500Z
+DTEND:20150211T150000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:ebe90521-779a-4f4a-9e1d-8c9f5d5609d8
+SUMMARY:Afternoon break
+DESCRIPTION:Grab a cuppa.
+DTSTART:20150211T150000Z
 DTEND:20150211T153000Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:986924ad-0e64-4745-9625-6ab9c0a133ef
-SUMMARY:Afternoon Tea
-DESCRIPTION:Grab a cuppa and visit the exhibition.
+DTSTAMP:20150129T203914Z
+UID:9290f434-337e-4c77-acba-888f0ae6513b
+SUMMARY:Break out sessions
+DESCRIPTION:
 DTSTART:20150211T153000Z
 DTEND:20150211T161500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:e6766f56-0692-4c3a-9ab1-9d08c3df1b6b
-SUMMARY:Xero leadership open Q&A
-DESCRIPTION:An open forum with Rod Drury\, Gary Turner and others\, this is
-  your opportunity to hear their insights and ask questions.
+DTSTAMP:20150129T203914Z
+UID:feb513fe-3381-4003-a25e-bf7bf41bb0cd
+SUMMARY:Building a perfect practice - panel session
+DESCRIPTION:
 DTSTART:20150211T161500Z
 DTEND:20150211T164500Z
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20150121T114015Z
-UID:af7ecfb2-c5a5-49b8-8a7f-1724b82929c1
-SUMMARY:Xerocon London: that’s a wrap
-DESCRIPTION:
+DTSTAMP:20150129T203914Z
+UID:24387d19-1991-4f0c-b38c-e456c1fa810f
+SUMMARY:Xero leadership open Q&A
+DESCRIPTION:An open forum with the Xero Leadership team\, this is your oppo
+ rtunity to hear their insights and ask questions
 DTSTART:20150211T164500Z
 DTEND:20150211T170000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20150129T203914Z
+UID:5119e90b-7d9d-4a34-82d7-697bb7d5846e
+SUMMARY:Xerocon London: that’s a wrap
+DESCRIPTION:
+DTSTART:20150211T170000Z
+DTEND:20150211T173000Z
 END:VEVENT
 END:VCALENDAR
