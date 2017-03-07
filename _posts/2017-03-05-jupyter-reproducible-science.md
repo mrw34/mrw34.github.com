@@ -68,3 +68,7 @@ This investigation was very much a collaborative effort. Any errors or omissions
 - [Reproducible Data Analysis in Jupyter](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
 - [Reproducible Computational Workflows with Continuous Analysis](http://biorxiv.org/content/early/2016/08/11/056473)
 - [Is software reproducibility possible and practical?](https://danielskatzblog.wordpress.com/2017/02/07/is-software-reproducibility-possible-and-practical/)
+
+## Update (07 March 2017)
+
+A [repository demonstrating automatic verification](https://gitlab.com/mwoodbri/jupyter-ci/tree/master) via CI is now available.
