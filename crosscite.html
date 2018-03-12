@@ -52,7 +52,7 @@
     $('input').val(getParameterByName('doi'));
     $('form').on('submit', function() {
       $('p').text('Loading...');
-      $.get('//markwoodbridge.appspot.com/crosscite', {doi: $('input').val(), style: $('select').val()}, function(data) {
+      $.get('https://runkit.io/mrw34/crosscite/branches/master', {doi: $('input').val(), style: $('select').val()}, function(data) {
         $('p').text(data);
       });
       return false;
