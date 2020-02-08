@@ -53,3 +53,6 @@ title: Home
 		{% endfor %}
 	</ul>
 </div>
+<script>
+	document.querySelector('a[href*="countries"').insertAdjacentText("afterend", ` (${document.querySelector('a[href*="countries"').getAttribute("href").split("#")[1].split(",").length - 2})`);
+</script>
