@@ -1,5 +1,4 @@
 ---
-layout: post
 title: L&Q informal lease extension process
 ---
 

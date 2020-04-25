@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Jupyter Notebooks and reproducible data science
 ---
 ## Introduction

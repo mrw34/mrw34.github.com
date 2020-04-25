@@ -1,5 +1,4 @@
 ---
-layout: post
 title: GroupText
 ---
 [GroupText](https://github.com/mrw34/grouptext) is a web application used by a [community project in London](http://www.gcsesuccess.org/) that provides free tutoring to local kids. It enables the project's tutors to contact individuals or groups of students by SMS without having direct access to their mobile phone numbers.

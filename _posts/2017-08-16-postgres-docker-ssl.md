@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Enabling SSL for PostgreSQL in Docker
 ---
 
