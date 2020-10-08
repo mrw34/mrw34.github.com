@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tempered</title>
+</head>
+<canvas id="canvas" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"
+    integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+<!-- <script>
+    const data = [
+        [1602129601, 21.86, 61.5, 14.1],
+        [1602133201, 21.90, 61.1, 14.1],
+        [1602136802, 21.89, 61.1, 14.0],
+        [1602140402, 21.95, 61.5, 14.2],
+        [1602144001, 22.06, 62.2, 14.5],
+    ].map(([d, t, h]) => ({ d: new Date(d * 1000), t, h }));
+</script> -->
+<script>
+    fetch('https://tempered.markwoodbridge.com')
+        .then(response => response.json())
+        .then(data => {
+            var lineChartData = {
+                labels: data.map(e => e.timestamp),
+                datasets: [{
+                    label: 'Temperature',
+                    borderColor: 'rgb(255, 99, 132)',
+                    fill: false,
+                    data: data.map(e => e.temperature),
+                    yAxisID: 'y-axis-1',
+                    pointRadius: 0,
+                    // lineTension: 0,
+                    borderWidth: 2
+                }, {
+                    label: 'Humidity',
+                    borderColor: 'rgb(54, 162, 235)',
+                    fill: false,
+                    data: data.map(e => e.humidity),
+                    yAxisID: 'y-axis-2',
+                    pointRadius: 0,
+                    // lineTension: 0,
+                    borderWidth: 2
+                }]
+            };
+
+            var ctx = document.getElementById('canvas').getContext('2d');
+            window.myLine = Chart.Line(ctx, {
+                data: lineChartData,
+                options: {
+                    // responsive: true,
+                    // hoverMode: 'index',
+                    // stacked: false,
+                    // title: {
+                    //     display: true,
+                    //     text: 'Chart.js Line Chart - Multi Axis'
+                    // },
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            // display: true,
+                            // scaleLabel: {
+                            //     display: true,
+                            //     labelString: 'Date'
+                            // },
+                            // ticks: {
+                            //     major: {
+                            //         fontStyle: 'bold',
+                            //         fontColor: '#FF0000'
+                            //     }
+                            // }
+                        }],
+                        yAxes: [{
+                            //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                            //         display: true,
+                            position: 'left',
+                            id: 'y-axis-1',
+                        }, {
+                            //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                            //         display: true,
+                            position: 'right',
+                            id: 'y-axis-2',
+
+                            //         // grid line settings
+                            //         gridLines: {
+                            //             drawOnChartArea: false, // only want the grid lines for one axis to show up
+                            //         },
+                        }],
+                    }
+                }
+            });
+        });
+</script>
