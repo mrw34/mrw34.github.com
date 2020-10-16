@@ -23,9 +23,7 @@
 <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
 <script type="text/babel">
 
-    const tickFormatter = (tick) => {
-        return new Date(tick).toLocaleDateString();
-    }
+    const tickFormatter = (tick) => new Date(tick).toLocaleDateString();
 
     class Chart extends React.PureComponent {
         constructor(props) {
