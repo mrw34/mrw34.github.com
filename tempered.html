@@ -23,8 +23,6 @@
 <script src="https://unpkg.com/recharts@1/umd/Recharts.min.js"></script>
 <script type="text/babel">
 
-    const tickFormatter = (tick) => new Date(tick).toLocaleDateString();
-
     class Chart extends React.PureComponent {
         constructor(props) {
             super(props);
@@ -65,7 +63,7 @@
                     <Recharts.ResponsiveContainer width="100%" aspect={2}>
                         < Recharts.LineChart width={800} height={400} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                             <Recharts.CartesianGrid strokeDasharray="3 3" />
-                            <Recharts.XAxis dataKey="timestamp" tickFormatter={tickFormatter} />
+                            <Recharts.XAxis dataKey="timestamp" tickFormatter={(tick) => new Date(tick).toLocaleDateString()} />
                             <Recharts.YAxis yAxisId="left" />
                             <Recharts.YAxis yAxisId="right" orientation="right" />
                             <Recharts.Tooltip />
