@@ -5,14 +5,15 @@
 <canvas width=200 height=200></canvas>
 <p></p>
 <script>
-    const p = document.getElementsByTagName("p")[0];
+    const p = document.getElementsByTagName('p')[0];
 
-    const canvas = document.getElementsByTagName("canvas")[0];
-    const ctx = canvas.getContext("2d");
+    const canvas = document.getElementsByTagName('canvas')[0];
+    const ctx = canvas.getContext('2d');
 
-    let n = 0, d = 0;
+    let n = 0;
+    let d = 0;
 
-    function update() {
+    (function update() {
         const [x, y] = [Math.random() * 2 - 1, Math.random() * 2 - 1];
         if (x ** 2 + y ** 2 < 1) {
             n++;
@@ -20,7 +21,5 @@
         }
         p.textContent = `π ≈ ${4 * (n / ++d)}`;
         window.requestAnimationFrame(update);
-    }
-
-    update();
+    })();
 </script>
