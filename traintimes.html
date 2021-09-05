@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<meta charset=utf-8>
+<title>Train Timetables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="https://traintimes.org.uk/traintimes-touch-icon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<form onsubmit="window.location = 'http://traintimes.org.uk/live/' + this.from.value + '/' + this.to.value; return false" class="container form-horizontal" style="padding-top: 1em">
+	<div class="form-group">
+		<label class="col-xs-2 control-label">From:</label>
+		<div class="col-xs-10">
+			<select name="from" class="form-control">
+				<option value=clj>Clapham Junction</option>
+				<option value=vxh>Vauxhall</option>
+				<option value=vic>Victoria</option>
+				<option value=wnt>Wandsworth Town</option>
+				<option value=wat>Waterloo</option>
+				<option value=zlw>Whitechapel</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-xs-2 control-label">To:</label>
+		<div class="col-xs-10">
+			<select name="to" class="form-control">
+				<option value=clj>Clapham Junction</option>
+				<option value=vxh>Vauxhall</option>
+				<option value=vic>Victoria</option>
+				<option value=wnt>Wandsworth Town</option>
+				<option value=wat>Waterloo</option>
+				<option value=zlw selected>Whitechapel</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-xs-10 col-xs-offset-2">
+			<input type="submit" class="btn btn-primary btn-block">
+		</div>
+	</div>
+</form>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script>
+	$('select[name=from]').change(function() {
+		$('select[name=to]').val('clj');
+	});
+	navigator.geolocation.getCurrentPosition(function(position) {
+		// http://www.doogal.co.uk/london_stations.php
+		var coordinates = {
+			clj: [51.4643668047, -0.1703006091],
+			vxh: [51.4857358164, -0.1238155529],
+			vic: [51.4964239699, -0.1439063031],
+			wnt: [51.4610340983, -0.1878956456],
+			wat: [51.5031466531, -0.1132448466],
+			zlw: [51.519588, -0.059406]
+		}
+		var minimumDistance = Number.MAX_VALUE;
+		var nearestStation;
+		for (station in coordinates) {
+			var distance = Math.pow(position.coords.latitude - coordinates[station][0], 2) + Math.pow(position.coords.longitude - coordinates[station][1] , 2);
+			if (distance < minimumDistance) {
+				nearestStation = station;
+				minimumDistance = distance;
+			}
+		}
+		$('select[name=from]').val(nearestStation);
+		if (nearestStation !== 'clj') {
+			$('select[name=to]').val('clj');
+		}
+	});
+</script>

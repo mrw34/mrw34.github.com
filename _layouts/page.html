@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="5xxQlm5lFwZzK4OnRLpL2VXM71Hitwn_DI8rBkcYiSA">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+	<link href="https://markwoodbridge.com" title="Mark Woodbridge" rel="author">
+	<link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+	<title>Mark Woodbridge | {{ page.title }}</title>
+	<style>
+		body>footer {
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+
+	{{content}}
+
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+		data-cf-beacon='{"token": "18cd57974af54fb4bbd9b5981160ea0e"}'></script>
+	<script>
+		(function (f, a, t, h, o, m) {
+			a[h] = a[h] || function () {
+				(a[h].q = a[h].q || []).push(arguments)
+			};
+			o = f.createElement('script'),
+				m = f.getElementsByTagName('script')[0];
+			o.async = 1; o.src = t; o.id = 'fathom-script';
+			m.parentNode.insertBefore(o, m)
+		})(document, window, '//fathom.markwoodbridge.com/tracker.js', 'fathom');
+		fathom('set', 'siteId', 'GEVSO');
+		fathom('trackPageview');
+	</script>
+</body>
+
+</html>

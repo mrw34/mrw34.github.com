@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrossCite</title>
+<link href="https://markwoodbridge.com" title="Mark Woodbridge" rel="author"/>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  input {
+    width: 20em;
+  }
+  label .text-muted {
+    font-weight: normal;
+  }
+  button {
+    margin-top: 0.5em;
+  }
+  p {
+    margin-top: 2em;
+  }
+</style>
+<body class="container">
+  <h1>CrossCite</h1>
+  <form >
+    <div class="form-group">
+      <label>DOI</label>
+      <input type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Style <a class="text-muted" href="http://citation.labs.crossref.org/">more...</a></label>
+      <select class="form-control">
+        <option value="apa">APA</option>
+        <option value="bibtex">BibTeX</option>
+        <option value="chicago-fullnote-bibliography">Chicago</option>
+        <option value="harvard3">Harvard</option>
+        <option value="ieee">IEEE</option>
+        <option value="mla">MLA</option>
+        <option value="vancouver">Vancouver</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  <p></p>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    function getParameterByName(name) {
+      var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+      return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+    $('input').val(getParameterByName('doi'));
+    $('form').on('submit', function() {
+      $('p').text('Loading...');
+      $.get('https://runkit.io/mrw34/crosscite/branches/master', {doi: $('input').val(), style: $('select').val()}, function(data) {
+        $('p').text(data);
+      });
+      return false;
+    });
+  </script>
+</body>

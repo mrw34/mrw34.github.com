@@ -1,0 +1,25 @@
+<!doctype html>
+<meta charset=utf-8>
+<title>Monte Carlo method</title>
+<h1>Monte Carlo method</h1>
+<canvas width=200 height=200></canvas>
+<p></p>
+<script>
+    const p = document.getElementsByTagName('p')[0];
+
+    const canvas = document.getElementsByTagName('canvas')[0];
+    const ctx = canvas.getContext('2d');
+
+    let n = 0;
+    let d = 0;
+
+    (function update() {
+        const [x, y] = [Math.random() * 2 - 1, Math.random() * 2 - 1];
+        if (x ** 2 + y ** 2 < 1) {
+            n++;
+            ctx.fillRect((x + 1) * 100, (y + 1) * 100, 1, 1);
+        }
+        p.textContent = `π ≈ ${4 * (n / ++d)}`;
+        window.requestAnimationFrame(update);
+    })();
+</script>

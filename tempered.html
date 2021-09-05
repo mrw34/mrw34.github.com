@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tempered</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 0.8rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<h1>Tempered</h1>
+<div id="chart"></div>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+<script src="https://unpkg.com/prop-types@15/prop-types.min.js"></script>
+<script src="https://unpkg.com/recharts@1/umd/Recharts.min.js"></script>
+<script type="text/babel">
+
+    class Chart extends React.PureComponent {
+        constructor(props) {
+            super(props);
+            this.state = {
+                error: null,
+                isLoaded: false,
+                data: []
+            };
+        }
+
+        componentDidMount() {
+            fetch("https://tempered.markwoodbridge.com")
+                .then(res => res.json())
+                .then(
+                    (data) => {
+                        this.setState({
+                            isLoaded: true,
+                            data
+                        });
+                    },
+                    (error) => {
+                        this.setState({
+                            isLoaded: true,
+                            error
+                        });
+                    }
+                )
+        }
+
+        render() {
+            const { error, isLoaded, data } = this.state;
+            if (error) {
+                return <div>Error: {error.message}</div>;
+            } else if (!isLoaded) {
+                return <div>Loading...</div>;
+            } else {
+                return (
+                    <Recharts.ResponsiveContainer width="100%" aspect={2}>
+                        < Recharts.LineChart width={800} height={400} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                            <Recharts.CartesianGrid strokeDasharray="3 3" />
+                            <Recharts.XAxis dataKey="timestamp" tickFormatter={(tick) => new Date(tick).toLocaleDateString()} />
+                            <Recharts.YAxis yAxisId="left" domain={[14, 'auto']} tickFormatter={(tick) => `${tick}°C`} />
+                            <Recharts.YAxis yAxisId="right" domain={[40, 'auto']} orientation="right" tickFormatter={(tick) => `${tick}%`} />
+                            <Recharts.Tooltip labelFormatter={(label) => new Date(label).toLocaleString()} />
+                            <Recharts.Legend />
+                            <Recharts.Line yAxisId="left" type="monotone" dataKey="temperature" stroke="#8884d8" dot={false} />
+                            <Recharts.Line yAxisId="right" type="monotone" dataKey="humidity" stroke="#82ca9d" dot={false} />
+                        </Recharts.LineChart >
+                    </Recharts.ResponsiveContainer >
+                );
+            }
+        }
+    }
+
+    ReactDOM.render(<Chart />, document.getElementById('chart'));
+
+</script>
