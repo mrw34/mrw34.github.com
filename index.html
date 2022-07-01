@@ -18,6 +18,7 @@ title: Home
 		<li><a href="https://programmes.markwoodbridge.com/">Programme Calendar</a></li>
 		<li><a href="https://www.amcharts.com/visited_countries/#AL,AT,BE,BG,HR,CY,CZ,DK,FI,FR,DE,GR,GG,HU,IS,IE,IT,JE,LU,LV,MK,MT,NL,NO,PL,PT,SK,ES,SE,CH,TR,GB,VA,CA,CU,US,MA,UG,CN,IN,IL,JP,PS,VN">Countries visited</a></li>
 		<!--li><a href="https://gtr.markwoodbridge.com/">GtR Alerts</a></li-->
+		<li><a href="https://datasette.markwoodbridge.com/parkruns/runs">parkruns</a></li>
 		<li><a href="https://birthdays.glitch.me">Notable birthdays</a> (<a href="https://glitch.com/edit/#!/birthdays">source</a>)</li>
 		<!--li><a href="https://launchpad.graphql.com/54j878l99">GraphQL with Monzo and Starling</a></li-->
 		<li><a href="https://strava.markwoodbridge.com">Strava parkrun importer</a></li>
@@ -62,4 +63,7 @@ title: Home
 </div>
 <script>
 	document.querySelector('a[href*="countries"').insertAdjacentText("afterend", ` (${document.querySelector('a[href*="countries"').getAttribute("href").split("#")[1].split(",").length - 2})`);
+</script>
+<script>
+	fetch("https://datasette.markwoodbridge.com/parkruns.json?sql=select%0D%0A++count%281%29%0D%0Afrom%0D%0A++runs").then(response => response.json()).then(data => document.querySelector('a[href*="parkruns"').insertAdjacentText("afterend", ` (${data.rows[0][0]})`));
 </script>
