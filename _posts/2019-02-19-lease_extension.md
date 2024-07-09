@@ -2,7 +2,7 @@
 title: L&Q informal lease extension process
 ---
 
-This process extends your current lease by 90 years and should take ~6 months. It does not involve any transfer of freehold. The costs described are based on 100% ownership (i.e. fully staircased) and are only indicative - the final fee will depend on various factors. You should seek advice before deciding whether to pursue an informal extension. See [Lease extensions explained](https://www.lqgroup.org.uk/manage-your-home/homeowners/your-lease-explained/lease-extensions-explained/) on the L&Q site for more information.
+This process extends your current lease by 90 years and should take ~6 months. _Note: L&Q now offer 990 year extensions_. It does not involve any transfer of freehold. The costs described are based on 100% ownership (i.e. fully staircased) and are only indicative - the final fee will depend on various factors. You should seek advice before deciding whether to pursue an informal extension. See [Lease extensions explained](https://www.lqgroup.org.uk/manage-your-home/homeowners/your-lease-explained/lease-extensions-explained/) on the L&Q site for more information.
 
 1. Request a Lease Extension Valuation Request Form from leaseextension@lqgroup.org.uk
 2. Return completed form, selecting a surveyor. L&Q should already have a copy of your lease, but it is worth confirming at this stage.
