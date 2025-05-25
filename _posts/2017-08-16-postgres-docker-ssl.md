@@ -1,5 +1,6 @@
 ---
 title: Enabling SSL for PostgreSQL in Docker
+hidden: true
 ---
 
 This script demonstrates how to enable SSL mode for a PostgreSQL server. It uses Docker but the same approach is valid when running a standalone server.
