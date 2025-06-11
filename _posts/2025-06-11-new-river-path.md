@@ -1,5 +1,5 @@
 ---
-title: "New River Path: Hertford to Stoke Newington (2025)"
+title: "New River Path: Hertford to Stoke Newington"
 ---
 
 The [New River Path](https://en.wikipedia.org/wiki/New_River_Path) is a long-distance footpath following the course of the New River, a 17th-century aqueduct.
