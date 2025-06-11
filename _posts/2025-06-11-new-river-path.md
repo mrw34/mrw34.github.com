@@ -10,6 +10,6 @@ Note that as of writing (June 2025) there are two significant diversions include
 - The King's Meads railway crossing near the start of the walk to have been permanently closed by Network Rail - the nearest alternative is on Mead Lane
 - The section after the Google data centre near Waltham Cross has been closed by Thames Water - their suggested diversion is via the footpath alongside the A10
 
-These diversions are included on the map below. There are also some minor, temporary diversions near Bull's Cross due to resurfacing work on the path but these are relatively easy to navigate.
+These diversions are included on the map below ([GPX](<New River Path.gpx>)). The resulting route is ~43km.There are also some minor, temporary diversions near Bull's Cross due to resurfacing work on the path but these are relatively easy to navigate and not included on the map.
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1C9THgmzy_Tp1xyrIMLO6D_TnSrF_9SQ" width="640" height="480"></iframe>
